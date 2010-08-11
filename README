@@ -3,3 +3,4 @@ ZZZOMG
 zzzomg is a last-resort fallback for setting the filetype when no other method
 stepped up to the plate.
 
+NOTE: This needs to be installed in ~/.vim/ and NOT with pathogen.

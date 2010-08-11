@@ -1,9 +1,7 @@
-" ~/.vim/after/ftdetect/zzz.vim - Fallback filetype based on extension of file.
+" zzzomg.vim - Fallback filetype based on extension of file.
 " Barry Arthur, 11 Aug 2010
 " Only sets filetype if it hasn't already been set.
 " Only sets filetype if a syntax/extension.vim file exists in runtimepath.
-
-echo "zzz"
 
 function! SetFiletypeFallback(file)
   let ext = expand(a:file.':e')
