@@ -1,0 +1,33 @@
+*zzzomg.txt*  Fallback Filetype Detection
+
+                                                *zzzomg-authors*
+Author:  Barry Arthur <barry dot arthur at gmail dot com>
+
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                    *zzzomg*
+
+zzzomg is a last-resort fallback for setting the filetype when no other method
+stepped up to the plate.
+
+RATIONALE                                       *zzzomg-rationale*
+
+Some syntax plugin writers forget or don't know how to or just don't plain
+care to release an ftdetect script with their masterpieces, leaving Vim users
+to have to create entries in their ~/.vimrc to source the syntax file
+themselves. This plugin relieves that burden for the simple case where the
+target file extension matches the syntax file name, which is probably a fair
+number.
+
+FILETYPE DETECTION METHOD                       *zzzomg-detection-method*
+
+zzzomg looks at the extension of the file being edited or created. If a
+corresponding syntax file exists somewhere in your |runtimepath| and the
+filetype has not already been set, then zzzomg will set the filetype to that
+extension.
+
+ISSUES                                          *zzzomg-issues*
+
+None yet... Suggestions for improvement welcome.
+
+ vim:tw=78:ts=8:ft=help:norl:
